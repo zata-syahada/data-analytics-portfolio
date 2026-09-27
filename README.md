@@ -28,7 +28,7 @@ Below is a list of projects contained within this repository. Each project has i
 
 - **Querying & Data Manipulation:** Subqueries, Common Table Expressions (CTEs), Joins (INNER, LEFT, RIGHT, SELF), and Aggregate Functions.
 
-- **Advanced SQL:** Window Functions such as `ROW_NUMBER()`, `RANK()`, `DENSE_RANK()`, and Rolling Totals.
+- **Advanced SQL:** Window Functions such as `ROW_NUMBER()`, `RANK()`, `DENSE_RANK()`, Rolling Totals, and etc.
 
 - **Exploratory Data Analysis:** Identifying patterns, trends, anomalies, and relationships within datasets.
 
