@@ -2,11 +2,11 @@
 
 ## 🚀 Quick Intro
 
-- 🎓 **Background:** Physics Graduate from Universitas Jenderal Soedirman (Unsoed), Class of 2026.
+- **Background:** Physics Graduate from Universitas Jenderal Soedirman (Unsoed), Class of 2026.
 
-- 🔄 **Transition:** Leveraging strong analytical, logical, and problem-solving skills from a science background to develop expertise in data analysis and data-driven decision making.
+- **Transition:** Leveraging strong analytical, logical, and problem-solving skills from a science background to develop expertise in data analysis and data-driven decision making.
 
-- 🎯 **Focus:** Data Cleaning, Exploratory Data Analysis (EDA), SQL, and transforming complex datasets into meaningful business insights.
+- **Focus:** Data Cleaning, Exploratory Data Analysis (EDA), SQL, and transforming complex datasets into meaningful business insights.
 
 ---
 
@@ -17,24 +17,22 @@ Below is a list of projects contained within this repository. Each project has i
 | Project Name | Description | Key Skills / Tools |
 |---|---|---|
 | [world Layoffs](./1-world-layoffs) | Data cleaning and exploratory analysis of global industry layoffs to uncover workforce trends. | MySQL, Data Cleaning, CTEs, Window Functions, EDA |
-| [Project 2](./Project-2/) | Coming Soon |  |
+| [Project 2](./2-gayanara-fashion-store/) | SQL analysis of Gayanara Fashion Store sales data to uncover business performance and customer insights. | MySQL, Data Cleaning, CTEs, JOINs, Aggregations, RFM Analysis, EDA |
 | [Project 3](./Project-3/) | Coming Soon |  |
-
-> 🚧 More projects are coming soon!
 
 ---
 
 ## 🛠️ Core Skills & Competencies
 
-- 🧹 **Data Preprocessing & Cleaning:** Handling missing values, removing duplicates, standardizing text data, and formatting date-time data.
+- **Data Preprocessing & Cleaning:** Handling missing values, removing duplicates, standardizing text data, and formatting date-time data.
 
-- 🔎 **Querying & Data Manipulation:** Subqueries, Common Table Expressions (CTEs), Joins (INNER, LEFT, RIGHT, SELF), and Aggregate Functions.
+- **Querying & Data Manipulation:** Subqueries, Common Table Expressions (CTEs), Joins (INNER, LEFT, RIGHT, SELF), and Aggregate Functions.
 
-- 📊 **Advanced SQL:** Window Functions such as `ROW_NUMBER()`, `RANK()`, `DENSE_RANK()`, and Rolling Totals.
+- **Advanced SQL:** Window Functions such as `ROW_NUMBER()`, `RANK()`, `DENSE_RANK()`, and Rolling Totals.
 
-- 📈 **Exploratory Data Analysis:** Identifying patterns, trends, anomalies, and relationships within datasets.
+- **Exploratory Data Analysis:** Identifying patterns, trends, anomalies, and relationships within datasets.
 
-- 💡 **Business Intelligence:** Translating raw database records into meaningful insights that can support data-driven decisions.
+- **Business Intelligence:** Translating raw database records into meaningful insights that can support data-driven decisions.
 
 ---
 
@@ -61,9 +59,9 @@ Below is a list of projects contained within this repository. Each project has i
 
 ## 📬 Let's Connect
 
-- 💼 **LinkedIn:** Zata Maitsaa Syahada (www.linkedin.com/in/zata-syahada)
-- 📧 **Email:** zatasyahada236@gmail.com
-- 🐙 **GitHub:** @zata-syahada (https://github.com/zata-syahada)
+- **LinkedIn:** Zata Maitsaa Syahada (www.linkedin.com/in/zata-syahada)
+- **Email:** zatasyahada236@gmail.com
+- **GitHub:** @zata-syahada (https://github.com/zata-syahada)
 
 ---
 
