@@ -1,15 +1,3 @@
-# 👋 Hi, I'm Zata
-
-## 🚀 Quick Intro
-
-- **Background:** Physics Graduate from Universitas Jenderal Soedirman (Unsoed), Class of 2026.
-
-- **Transition:** Leveraging strong analytical, logical, and problem-solving skills from a science background to develop expertise in data analysis and data-driven decision making.
-
-- **Focus:** Data Cleaning, Exploratory Data Analysis (EDA), SQL, and transforming complex datasets into meaningful business insights.
-
----
-
 ## 📂 Project Directory
 
 Below is a list of projects contained within this repository. Each project has its own dedicated folder containing datasets, SQL queries, and analysis.
@@ -43,17 +31,6 @@ Below is a list of projects contained within this repository. Each project has i
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
 
 </p>
-
----
-
-## 📚 Currently Learning
-
-- 📊 Advanced Data Analysis
-- 🐍 Python for Data Analysis
-- 📈 Data Visualization
-- 🗄️ Advanced SQL
-- 💼 Business Intelligence
-- 📐 Statistics for Data Analysis
 
 ---
 
