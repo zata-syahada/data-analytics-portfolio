@@ -42,7 +42,7 @@ The dataset contains relational banking data used for analyzing customer profile
   - Applied data type management, filtering, and transformation steps.
   - Built a reproducible data preparation workflow.
   
-![Power Query Screenshot](./assets/Screenshot 2026-10-05 130246.png)
+![Power Query Screenshot](./assets/power-query.png)
 
 - **Power Pivot — Data Modeling & Analysis**
   - Built a relational data model connecting `customer`, `account`, `transaction`, and `loan` tables.
@@ -50,7 +50,8 @@ The dataset contains relational banking data used for analyzing customer profile
   - Developed a centralized analytical data model for cross-table analysis.
   - Used PivotTables and PivotCharts on top of the Power Pivot data model.
   - Analyzed customer, transaction, AUM, and credit-risk metrics across multiple dimensions.
-  ![1-Executive Banking Analytics Dashboard](assets/banking-dashboard.png) 
+
+ ![Power Query Screenshot](./assets/power-pivot.png)
 
 - **Interactive Dashboard Development**
   - Connected PivotTables and PivotCharts to the underlying data model.
@@ -97,7 +98,7 @@ The project demonstrates analytical understanding of:
  
 ## 📊 Dashboard Preview 
  
-![1-Executive Banking Analytics Dashboard](assets/banking-dashboard.png) 
+![1-Executive Banking Analytics Dashboard](assets/dashboard.png) 
  
 --- 
  
