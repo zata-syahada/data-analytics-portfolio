@@ -41,7 +41,8 @@ The dataset contains relational banking data used for analyzing customer profile
   - Prepared structured datasets for downstream analysis and reporting.
   - Applied data type management, filtering, and transformation steps.
   - Built a reproducible data preparation workflow.
-  ![1-Executive Banking Analytics Dashboard](assets/banking-dashboard.png) 
+  
+![Power Query Screenshot](./assets/Screenshot 2026-10-05 130246.png)
 
 - **Power Pivot — Data Modeling & Analysis**
   - Built a relational data model connecting `customer`, `account`, `transaction`, and `loan` tables.
