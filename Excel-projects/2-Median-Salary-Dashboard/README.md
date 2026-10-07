@@ -24,6 +24,7 @@ The dashboard is controlled through interactive selections for:
 
 The project demonstrates how advanced Excel formulas, structured references, dynamic arrays, named ranges, and dynamic charts can be combined to build an interactive analytical tool without relying on Power Query, Power Pivot, or DAX.
 
+![2-Median-Salary-Dashboard](assets/dash.png)
 ---
 
 ## 🎯 Project Objectives
