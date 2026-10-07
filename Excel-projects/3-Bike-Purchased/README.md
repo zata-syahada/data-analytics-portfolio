@@ -1,5 +1,7 @@
 # 🚲 Bike Purchase Analysis Dashboard — Excel
 
+![3-Bike-Purchased](assets/dashboard.png)
+
 An interactive **Microsoft Excel dashboard** designed to analyze customer bicycle purchasing behavior based on demographic, income, occupation, education, and commuting-distance data.
 
 This project demonstrates how **Excel PivotTables, PivotCharts, Slicers, calculated columns, and dashboard design** can be used to transform raw customer data into meaningful business insights.
