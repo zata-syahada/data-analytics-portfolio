@@ -5,8 +5,8 @@ Below is a list of projects contained within this repository. Each project has i
 | Project Name | Description | Key Skills / Tools |
 |---|---|---|
 | [world Layoffs](./1-world-layoffs) | Data cleaning and exploratory analysis of global industry layoffs to uncover workforce trends. | MySQL, Data Cleaning, CTEs, Window Functions, EDA |
-| [Project 2](./2-gayanara-fashion-store/) | SQL analysis of Gayanara Fashion Store sales data to uncover business performance and customer insights. | MySQL, Data Cleaning, CTEs, JOINs, Aggregations, RFM Analysis, EDA |
-| [Project 3](./Project-3/) | Coming Soon |  |
+| [Gayanara](./2-gayanara-fashion-store/) | SQL analysis of Gayanara Fashion Store sales data to uncover business performance and customer insights. | MySQL, Data Cleaning, CTEs, JOINs, Aggregations, RFM Analysis, EDA |
+| [Klinik Medinara](./3-klinik-medinara) |  SQL-based analysis of clinic operations to uncover patient, doctor, revenue, diagnosis, and prescription insights. | MySQL, Data Cleaning, CTEs, Window Functions, JOINs, Aggregation, EDA |  |
 
 ---
 
