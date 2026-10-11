@@ -93,11 +93,12 @@ Interactivity varies by project: some dashboards support filtering, including da
 
 ---
 
-## 👤 About Me
+## 🔗 About Me and Tableau Public Profile
+**Zata Maitsaa Syahada**
 
-**Zata Syahada**
+Explore my Tableau visualizations and interactive dashboards on Tableau Public.
 
-Aspiring Data Analyst
+👉 **[View My Tableau Public Profile](https://public.tableau.com/app/profile/zata.syahada/vizzes)**
 
 **Tools:** Tableau · Excel · SQL · Data Analytics
 
