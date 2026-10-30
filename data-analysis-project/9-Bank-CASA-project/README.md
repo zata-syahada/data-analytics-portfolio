@@ -32,72 +32,29 @@ Definitions used: **New account** = opened on or after 2025-01-01. **Active** = 
 
 ---
 
-## Case 1: What caused the CASA ratio drop?
+## Executive Summary & Key Findings
+### Dashboard Preview
+![CASA Dashboard Preview](dash.png)
 
-![Funding mix and CASA ratio](images/fig1_casa_trend.png)
 
-**Step 1: Locate the problem.** Total DPK was stable at about Rp26.5-26.7 billion through July, then fell **5.05%** to Rp25.3 billion in August (query 1.1).
+### Case 1: What Caused the CASA Ratio Drop?
+* The Problem: Total DPK remained stable at ~Rp26.5B through July before dropping 5.05% to Rp25.3B in August, recovering back to ~Rp25.7B in September. Month-over-month analysis shows giro and tabungan dropped sharply by -8.04% and -10.25% in August while deposito remained flat, dragging down the CASA ratio.
+* Root Cause (Closures vs. Active Drawdowns): Splitting July-to-August balance changes by account status revealed that the contraction was entirely driven by account closures (21 closed accounts removed Rp1,692M), whereas active accounts actually grew by Rp345M (+1.4%).
+* Concentration Risk: While 16 of the 21 closed accounts belonged to the Mass segment, 3 Prioritas accounts accounted for 84.3% (Rp1,426M) of the lost balance. Furthermore, the Top 10 depositors concentration ratio stands at 42.40%, highlighting high vulnerability to single-client liquidity shocks.
 
-**Step 2: Which product moved?** Month-over-month (query 1.2, `LAG` window function): giro **-8.04%** and tabungan **-10.25%** in August, while deposito was flat (+0.21%). The decline is entirely in CASA, which is why the ratio fell.
-
-![Month-over-month change by product](images/fig2_mom_by_product.png)
-
-**Step 3: Is it customers withdrawing, or accounts disappearing?** Splitting the July-to-August change by account status (query 1.3):
-
-![Balance change by status](images/fig3_august_change_by_status.png)
-
-| Product | Closed accounts | Still-active accounts |
-|---|---|---|
-| Giro | -Rp485M | -Rp36M |
-| Tabungan | -Rp1,006M | +Rp155M |
-| Deposito | -Rp201M | +Rp226M |
-
-The 21 accounts closed in August removed **Rp1,692M**. Accounts that stayed open grew by **Rp345M (+1.4%)**. Customers who stayed did not reduce their balances; the drop is a closure effect.
-
-**Step 4: Test the explanation (counterfactual).** If the 21 closed accounts are excluded from every month (query 1.4), the CASA ratio goes from 53.29% (July) to 53.03% (August): a change of **-0.26 points** instead of **-2.47 points**. The closures explain about **90%** of the headline decline. They had such a large effect because 88% of the closed balance was CASA, well above the 55.5% portfolio average, so removing it pulled the ratio down.
-
-**Step 5: Who closed?** (query 1.5)
-
-![Closed accounts by segment](images/fig4_closed_by_segment.png)
-
-16 of the 21 closed accounts were Mass, but they held only 3.1% of the lost balance. **Three Prioritas accounts caused 84.3% (Rp1,426M).** Counting accounts would point attention at the wrong segment.
-
-**Step 6: Structural risk.** The Prioritas segment holds **78.2%** of DPK and the 10 largest customers hold **42.4%** (queries 1.6, 1.7). One large withdrawal moves the whole ratio.
-
-### Recommendations (case 1)
-1. **Report the CASA ratio with and without closures** so the trend is not distorted by one-off events.
-2. **Build a retention watchlist for high-balance customers**: falling balance or falling transaction count is an early signal before closure.
-3. **Track concentration** (top-10 share) alongside the ratio.
-4. **Find out why the 3 Prioritas accounts closed** (competitor offer, fees, service). Data shows *what* happened, not *why*.
+### Case 2: New Accounts & Dormancy Analysis
+* Acquisition vs. Balance Weight: Across accounts opened since 2025, Mass accounts represent 44% of total new accounts but contribute only 2.2% of the balance, whereas Prioritas accounts make up 36% of new accounts and hold 89.0% of the balance.
+* Cohort Activation: Activation rates across all historical cohorts remain healthy between 71% and 87% (with the 2025 cohort at 81.8%).
+* Dormant Accounts: A total of 36 dormant accounts were identified between July and September, representing a prime target for balance-based reactivation campaigns.
 
 ---
 
-## Case 2: Many new accounts, but is the balance growing?
+## Strategic Recommendations
 
-**Step 1: Who are the new accounts?** 25 accounts were opened since 2025 (query 2.1):
-
-![New accounts by segment](images/fig5_new_accounts_by_segment.png)
-
-| Segment | New accounts | Share of accounts | Avg balance | Share of balance |
-|---|---|---|---|---|
-| Prioritas | 9 | 36.0% | Rp301.6M | 89.0% |
-| Affluent | 5 | 20.0% | Rp54.0M | 8.9% |
-| Mass | 11 | 44.0% | Rp6.0M | 2.2% |
-
-Mass is the largest group by count but contributes 2.2% of the balance. **Account count and funding contribution tell different stories**, so a KPI based on count alone would overstate success.
-
-**Step 2: Are the accounts used?** Activation by opening-year cohort (query 2.2):
-
-![Activation by cohort](images/fig6_activation_by_cohort.png)
-
-Activation is between 71% and 87% for every cohort, and the 2025 cohort sits at 81.8% (this view covers giro and tabungan only, so the 2025 cohort has 22 accounts here versus 25 above). In this dataset, new accounts are being used; the issue is balance size and mix, not inactivity.
-
-**Step 3: Where is balance sleeping?** 36 of 199 active non-deposit accounts (**18.1%**) have had no transaction in 90 days, holding **Rp3.2 billion (23.4% of CASA balance)** (queries 2.3 and 2.4). Dormant accounts are over-represented in balance terms, which makes them a better reactivation target than their count suggests.
-
-### Recommendations (case 2)
-1. **Measure acquisition by balance and activation**, for example "new accounts active in 90 days with balance above a set threshold", not by opened accounts.
-2. **Prioritize dormant-account outreach by balance**, starting with the largest sleeping balances.
-3. **Link acquisition to transaction habits** (payroll, QR payments, mobile banking) so balances stay in the account.
+1. Adjust Reporting Metrics: Report CASA ratios both with and without one-off account closures to prevent executive misinterpretation of core portfolio health.
+2. Implement Early-Warning Watchlists: Monitor high-balance Prioritas accounts for sudden drops in transaction frequency or balance as an early indicator of churn.
+3. Concentration Monitoring: Track the top-10 depositor concentration ratio (currently at 42.40%) alongside daily liquidity buffers.
+4. Targeted Dormancy Reactivation: Focus outreach efforts on sleeping balances rather than raw account counts to maximize capital reactivation efficiency.
 
 ---
 
@@ -115,21 +72,6 @@ Activation is between 71% and 87% for every cohort, and the 2025 cohort sits at 
 - **Small sample** (252 accounts); percentages move a lot with one account.
 - **Definitions are assumptions** (new = since 2025, active = 90 days). A real bank would set these by policy.
 - The analysis shows *what* changed and *where*; it does not prove *why* customers left.
-
-## Repository structure
-
-```
-data/      5 CSV files (synthetic)
-sql/       00_setup.sql, 01_casa_trend.sql, 02_new_accounts.sql
-images/    6 charts used above
-scripts/   generate_data.py (reproduces the dataset, seed 42)
-```
-
-## How to run
-
-1. Edit the folder path in `sql/00_setup.sql` (the `LOAD DATA LOCAL INFILE` lines) to where `data/` is on your machine, then run it in MySQL 8.0+.
-2. Run `sql/01_casa_trend.sql` and `sql/02_new_accounts.sql` query by query. Row counts after import should be 200 / 252 / 1,512 / 2,841 / 60.
-3. Optional: `python scripts/generate_data.py` regenerates the CSV files.
 
 ## Skills demonstrated
 
